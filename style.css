@@ -133,3 +133,29 @@ footer {
     text-align: center;
     padding: 1.5rem;
 }
+
+/* Efekti na karticama i prilagodba za mobitele */
+.about-item, .project-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-item:hover, .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+}
